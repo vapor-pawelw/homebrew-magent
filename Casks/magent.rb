@@ -1,6 +1,6 @@
 cask "magent" do
   version "1.0.0"
-  sha256 "PLACEHOLDER"
+  sha256 "61eef661202663710b7faebe61a7566b1319540aaecbde84b1c8581d0f7e9568"
 
   url "https://github.com/vapor-pawelw/magent/releases/download/v#{version}/Magent.zip"
   name "Magent"

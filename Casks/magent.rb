@@ -9,6 +9,11 @@ cask "magent" do
 
   app "Magent.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/Magent.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/Magent",
     "~/Library/Preferences/com.magent.app.plist",

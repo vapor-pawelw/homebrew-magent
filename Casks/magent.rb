@@ -9,13 +9,9 @@ cask "magent" do
 
   app "Magent.app"
 
-  postflight do
+  preflight do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Magent.app"],
-                   sudo: false
-    system_command "/usr/bin/xattr",
-                   args: ["-rd", "com.apple.provenance", "#{appdir}/Magent.app"],
-                   sudo: true
+                   args: ["-cr", "#{staged_path}/Magent.app"]
   end
 
   zap trash: [

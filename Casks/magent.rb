@@ -15,10 +15,10 @@ class GitHubPrivateRepositoryReleaseAssetDownloadStrategy < CurlDownloadStrategy
 end
 
 cask "magent" do
-  version "1.2.2"
-  sha256 "50005e99fce77cc5ea78e66f3d099abd903397848744e53afc906e824313a50e"
+  version "1.3.0"
+  sha256 "10ea6168aaa27211e49b3755032df1b1745df9bd9e64250efbb7000cf61b6c4a"
 
-  url "https://github.com/vapor-pawelw/magent-releases/releases/download/v1.2.2/Magent.dmg"
+  url "https://github.com/vapor-pawelw/magent-releases/releases/download/v1.3.0/Magent.dmg"
   name "mAgent"
   desc "Native macOS app for managing coding agents as parallel git worktree sessions"
   homepage "https://github.com/vapor-pawelw/magent"

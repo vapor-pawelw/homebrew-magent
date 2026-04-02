@@ -1,2 +1,12 @@
-# homebrew-magent
-Homebrew tap for mAgent
+# Deprecated tap
+
+This tap is deprecated.
+
+The `magent` cask has moved to `vapor-pawelw/homebrew-tap`.
+
+Existing installs should migrate automatically after `brew update`.
+New installs should use:
+
+```bash
+brew tap vapor-pawelw/homebrew-tap
+```
